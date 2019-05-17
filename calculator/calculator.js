@@ -1,7 +1,16 @@
 module.exports = {
-  add
+  add,
+  multiply
 };
 
 function add(a, b) {
-  return a + b;
+  if (typeof a === "number" && typeof b === "number") {
+    return a + b;
+  } else {
+    return null;
+  }
+}
+
+function multiply(a, b) {
+  return a * b;
 }
